@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    /*
+    Extract title author of each book in books array
+    */
+  const books = [
+    {title: 'Full stack javascript', author: 'abc', url: 'http://sitepoint.com/fullstackjavascript'},
+    {title: 'javascript', author: 'def', url: 'http://sitepoint.com/javascript'},
+    {title: 'css', author: 'xyz', url: 'http://sitepoint.com/css'}
+  ];
+
+  for(let {title, author} of books) {
+    console.log(title, author);
+
+  }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

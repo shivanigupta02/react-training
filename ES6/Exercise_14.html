@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let config = {
+      charType: 0,
+      bullColor: 'green',
+      bearColor: 'red',
+      days: 30
+    }
+
+    /**
+     * Function can be called with any config object 
+     * @param object should have default values if any key is missing
+     */
+    function drawChart(data, {charType=0, bullColor='green', bearColor='red', days=30 }) {
+      //do not implement function body
+    }
+    drawChart([], config);
+  </script>
+</body>
+</html>

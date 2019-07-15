@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    /**
+    Destructuring expression from given expression
+    **/
+    const meta = {
+      title : 'Destructuring Assignment',
+      authors: [
+        {
+          firstname: 'Rahul',
+          lastname: 'Sharma'
+        }
+      ],
+      publishers: {
+        name: 'SitePoint',
+        url: 'http://www.sitepoint.com'
+      }
+    };
+
+    const {title: doc, authors: [{firstname: name}], publishers: {url: web}} = meta;
+    console.log(doc, name, web);
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
